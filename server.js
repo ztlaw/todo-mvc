@@ -13,7 +13,7 @@ app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
-app.use('/', homeRoutes)
+app.use('/', homeRoutes) //using homeRoutes makes it so methods will ONLY be available from this location
 app.use('/todos', todoRoutes)
  
 app.listen(process.env.PORT, ()=>{
