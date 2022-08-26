@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const connectDB = require('./config/database')
+const connectDB = require('./config/database') //'require' goes to a different file to get something -- here we are getting the connectDB function to connect to Mongoose
 const homeRoutes = require('./routes/home')
 const todoRoutes = require('./routes/todos')
 
